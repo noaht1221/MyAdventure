@@ -15,33 +15,27 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var buttonTwo: UIButton!
     
-    var scenarioLogic = ScenarioLogic();
+    var storyBrain = StoryLogic()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        scenarioLabel.text = scenarioLogic.getScenario(scenarioLogic.getCoordinates())
-        buttonOne.setTitle(scenarioLogic.getOption(scenarioLogic.getCoordinates(), 0), for: .normal)
-        buttonTwo.setTitle(scenarioLogic.getOption(scenarioLogic.getCoordinates(), 1), for: .normal)
+        updateUI()
     }
     
     @IBAction func choicePicked(_ sender: Any) {
-        let userPick = (sender as AnyObject).titleLabel!.text!
-        
-        scenarioLogic.compareUserChoice(scenarioLogic.getCoordinates(), userPick)
+        storyBrain.nextStory(userChoice: (sender as AnyObject).currentTitle!)
+               
+               updateUI()
         
         Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: #selector(updateUI), userInfo: nil, repeats: false)
     }
     
     @objc func updateUI() {
         
-        scenarioLabel.text = scenarioLogic.getScenario(scenarioLogic.getCoordinates())
-        
-        let optionOneTitle = scenarioLogic.getOption(scenarioLogic.getCoordinates(), 0)
-        let optionTwoTitle = scenarioLogic.getOption(scenarioLogic.getCoordinates(), 1)
-        
-        buttonOne.setTitle(optionOneTitle, for: .normal)
-        buttonTwo.setTitle(optionTwoTitle, for: .normal)
+        scenarioLabel.text = storyBrain.storyTitle()
+                buttonOne.setTitle(storyBrain.choiceTitle1(), for: .normal)
+                buttonTwo.setTitle(storyBrain.choiceTitle2(), for: .normal)
         
         
         
