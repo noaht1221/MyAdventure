@@ -7,15 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6017F1E32991D84D00AEEFAE /* Scenario.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6017F1E22991D84D00AEEFAE /* Scenario.swift */; };
+		6017F1E52991D86700AEEFAE /* ScenarioLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6017F1E42991D86700AEEFAE /* ScenarioLogic.swift */; };
 		601FAA61298F622000B9D5F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FAA60298F622000B9D5F8 /* AppDelegate.swift */; };
 		601FAA63298F622000B9D5F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FAA62298F622000B9D5F8 /* SceneDelegate.swift */; };
 		601FAA65298F622000B9D5F8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FAA64298F622000B9D5F8 /* ViewController.swift */; };
 		601FAA68298F622000B9D5F8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601FAA66298F622000B9D5F8 /* Main.storyboard */; };
 		601FAA6A298F622300B9D5F8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 601FAA69298F622300B9D5F8 /* Assets.xcassets */; };
 		601FAA6D298F622300B9D5F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 601FAA6B298F622300B9D5F8 /* LaunchScreen.storyboard */; };
-		601FAA78298F622300B9D5F8 /* MyAdventureTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FAA77298F622300B9D5F8 /* MyAdventureTests.swift */; };
-		601FAA82298F622300B9D5F8 /* MyAdventureUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FAA81298F622300B9D5F8 /* MyAdventureUITests.swift */; };
-		601FAA84298F622300B9D5F8 /* MyAdventureUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 601FAA83298F622300B9D5F8 /* MyAdventureUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6017F1E22991D84D00AEEFAE /* Scenario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scenario.swift; sourceTree = "<group>"; };
+		6017F1E42991D86700AEEFAE /* ScenarioLogic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScenarioLogic.swift; sourceTree = "<group>"; };
 		601FAA5D298F622000B9D5F8 /* MyAdventure.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyAdventure.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		601FAA60298F622000B9D5F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		601FAA62298F622000B9D5F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,10 +46,7 @@
 		601FAA6C298F622300B9D5F8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		601FAA6E298F622300B9D5F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		601FAA73298F622300B9D5F8 /* MyAdventureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAdventureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		601FAA77298F622300B9D5F8 /* MyAdventureTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdventureTests.swift; sourceTree = "<group>"; };
 		601FAA7D298F622300B9D5F8 /* MyAdventureUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyAdventureUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		601FAA81298F622300B9D5F8 /* MyAdventureUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdventureUITests.swift; sourceTree = "<group>"; };
-		601FAA83298F622300B9D5F8 /* MyAdventureUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAdventureUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,12 +74,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		6017F1E62991D89C00AEEFAE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6017F1E22991D84D00AEEFAE /* Scenario.swift */,
+				6017F1E42991D86700AEEFAE /* ScenarioLogic.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		6017F1E72991D8CE00AEEFAE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				601FAA64298F622000B9D5F8 /* ViewController.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		601FAA54298F622000B9D5F8 = {
 			isa = PBXGroup;
 			children = (
 				601FAA5F298F622000B9D5F8 /* MyAdventure */,
-				601FAA76298F622300B9D5F8 /* MyAdventureTests */,
-				601FAA80298F622300B9D5F8 /* MyAdventureUITests */,
 				601FAA5E298F622000B9D5F8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -101,30 +114,14 @@
 			children = (
 				601FAA60298F622000B9D5F8 /* AppDelegate.swift */,
 				601FAA62298F622000B9D5F8 /* SceneDelegate.swift */,
-				601FAA64298F622000B9D5F8 /* ViewController.swift */,
+				6017F1E62991D89C00AEEFAE /* Model */,
+				6017F1E72991D8CE00AEEFAE /* View */,
 				601FAA66298F622000B9D5F8 /* Main.storyboard */,
 				601FAA69298F622300B9D5F8 /* Assets.xcassets */,
 				601FAA6B298F622300B9D5F8 /* LaunchScreen.storyboard */,
 				601FAA6E298F622300B9D5F8 /* Info.plist */,
 			);
 			path = MyAdventure;
-			sourceTree = "<group>";
-		};
-		601FAA76298F622300B9D5F8 /* MyAdventureTests */ = {
-			isa = PBXGroup;
-			children = (
-				601FAA77298F622300B9D5F8 /* MyAdventureTests.swift */,
-			);
-			path = MyAdventureTests;
-			sourceTree = "<group>";
-		};
-		601FAA80298F622300B9D5F8 /* MyAdventureUITests */ = {
-			isa = PBXGroup;
-			children = (
-				601FAA81298F622300B9D5F8 /* MyAdventureUITests.swift */,
-				601FAA83298F622300B9D5F8 /* MyAdventureUITestsLaunchTests.swift */,
-			);
-			path = MyAdventureUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +256,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				601FAA65298F622000B9D5F8 /* ViewController.swift in Sources */,
+				6017F1E32991D84D00AEEFAE /* Scenario.swift in Sources */,
 				601FAA61298F622000B9D5F8 /* AppDelegate.swift in Sources */,
+				6017F1E52991D86700AEEFAE /* ScenarioLogic.swift in Sources */,
 				601FAA63298F622000B9D5F8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -268,7 +267,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601FAA78298F622300B9D5F8 /* MyAdventureTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,8 +274,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				601FAA82298F622300B9D5F8 /* MyAdventureUITests.swift in Sources */,
-				601FAA84298F622300B9D5F8 /* MyAdventureUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
