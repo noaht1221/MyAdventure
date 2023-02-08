@@ -1,5 +1,5 @@
 //
-//  ScenarioLogic.swift
+//  StoryLogic.swift
 //  MyAdventure
 //
 //  Created by Noah Thompson on 2/6/23.
